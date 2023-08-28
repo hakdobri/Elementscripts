@@ -2,6 +2,7 @@
 // @name         Фильтрация постов от рекламы на Element(не трогает верифицированых)
 // @namespace    http://tampermonkey.net/
 // @version      0.2
+// @updateURL https://github.com/hakdobri/Elementscripts/raw/main/Deleteads.user.js
 // @downloadURL https://github.com/hakdobri/Elementscripts/raw/main/Deleteads.user.js
 // @description  Удаляет посты с рекламой хентая и тд
 // @author       mrhakulya
@@ -12,7 +13,7 @@
 (function() {
     'use strict';
 
-    const prohibitedKeywords = ['https://t.me', 'хентай', 'Хента', 't.me', 'hent', 'hentai', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http', '.рф', '.gg', '.xn--p1ai', '.xn--80adxhks', '.top','.toр','.xyz','.хуз', '.хyз', 'xуz', 'xyз', '.club', '.cluв', '.сом', '.xn--80aswg', 'hеntai', 'hеntaі', 't。me', 'bit。ly'];
+    const prohibitedKeywords = ['https://t.me', 'хентай', 'Хента', 't.me', 'hent', 'hentai', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http', '.рф', '.xn--p1ai', '.xn--80adxhks', '.top','.toр','.xyz','.хуз', '.хyз', 'xуz', 'xyз', '.club', '.cluв', '.сом', '.xn--80aswg', 'hеntai', 'hеntaі', 't。me', 'bit。ly'];
     let loggedUsernames = [];
 
     function hidePosts() {
