@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    const prohibitedKeywords = ['https://t.me', 'хентай', 'Хента', 't.me', 'hent', 'hentai', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http'];
+    const prohibitedKeywords = ['https://t.me', 'хентай', 'Хента', 't.me', 'hent', 'hentai', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http', '.рф', '.gg', '.xn--p1ai', '.xn--80adxhks', '.top','.toр','.xyz','.хуз', '.хyз', 'xуz', 'xyз', '.club', '.cluв', '.сом', '.xn--80aswg', 'hеntai', 'hеntaі', 't。me', 'bit。ly'];
     let loggedUsernames = [];
 
     function hidePosts() {
@@ -25,7 +25,8 @@
             const usernameElement = post.querySelector('.PostInfo-Username');
             const verifyIcon = post.querySelector('.UI-USR_ICON[iid="VERIFY"]');
             const altnodesIcon = post.querySelector('.UI-USR_ICON[iid="AN"]');
-            if (postText && usernameElement && !verifyIcon && !altnodesIcon && usernameElement != "Element News") {
+            // if (usernameElement == ",") {}
+            if (postText && usernameElement && !verifyIcon && !altnodesIcon && usernameElement != "Element News" && usernameElement != ",") {
                 const textContent = postText.textContent.toLowerCase();
                 const username = usernameElement.textContent.trim();
                 if (username != currentUser) {
