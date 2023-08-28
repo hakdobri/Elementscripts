@@ -2,7 +2,7 @@
 // @name         Фильтрация постов от рекламы на Element(не трогает верифицированых)
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @downloadURL raw url
+// @downloadURL https://github.com/hakdobri/Elementscripts/raw/main/Deleteads.user.js
 // @description  Удаляет посты с рекламой хентая и тд
 // @author       mrhakulya
 // @match        https://element.xaromie.fun/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F
