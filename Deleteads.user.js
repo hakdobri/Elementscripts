@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Фильтрация постов от рекламы на Element(не трогает верифицированых)
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @downloadURL https://github.com/hakdobri/Elementscripts/raw/main/Deleteads.user.js
 // @description  Удаляет посты с рекламой хентая и тд
 // @author       mrhakulya
