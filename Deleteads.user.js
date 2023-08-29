@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-    const prohibitedKeywords = ['https://t.me', 'хентай', 'Хента', 't.me', 'hent', 'hentai', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http', '.рф', '.xn--p1ai', '.xn--80adxhks', '.top','.toр','.xyz','.хуз', '.хyз', 'xуz', 'xyз', '.club', '.cluв', '.сом', '.xn--80aswg', 'hеntai', 'hеntaі', 't。me', 'bit。ly'];
+    const prohibitedKeywords = ['https://t.me', 't.me', 'http://bit.ly', 'bit.ly', '.ru', '.ly', '.com', '.co', 'https', 'http', '.рф', '.xn--p1ai', '.xn--80adxhks', '.top','.toр','.xyz','.хуз', '.хyз', 'xуz', 'xyз', '.club', '.cluв', '.сом', '.xn--80aswg', 'hеntai', 'hеntaі', 't。me', 'bit。ly'];
     let loggedUsernames = [];
 
     function hidePosts() {
