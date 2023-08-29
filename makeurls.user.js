@@ -19,7 +19,6 @@
         const postHTML = post.innerHTML;
         const replacedHTML = postHTML.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" style="text-decoration: underline; color: #ccc;" target="_blank">$1</a>');
         post.innerHTML = replacedHTML;
-        console.log("Сделана ссылка кликабельной");
     }
 
     function processNewPosts() {
