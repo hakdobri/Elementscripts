@@ -6,7 +6,7 @@
 // @downloadURL https://github.com/hakdobri/Elementscripts/raw/main/Deleteads.user.js
 // @description  Удаляет посты с рекламой хентая и тд
 // @author       mrhakulya
-// @match        https://element.xaromie.fun/*/*
+// @match        https://element.xaromie.fun/*
 // @grant        none
 // ==/UserScript==
 
