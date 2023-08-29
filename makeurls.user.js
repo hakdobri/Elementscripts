@@ -2,6 +2,8 @@
 // @name         MakeURLs Element
 // @namespace    http://tampermonkey.net/
 // @version      0.1
+// @updateURL https://github.com/hakdobri/Elementscripts/raw/main/makeurls.user.js
+// @downloadURL https://github.com/hakdobri/Elementscripts/raw/main/makeurls.user.js
 // @description  Делает ссылки кликабельными
 // @author       markusha and mrhakulya
 // @match        https://element.xaromie.fun/*
