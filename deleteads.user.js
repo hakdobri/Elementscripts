@@ -59,7 +59,6 @@
                 if (username != currentUser) {
                     if (prohibitedKeywords.some(keyword => textContent.includes(keyword.toLowerCase()))) {
                         if (!loggedUsernames.includes(username)) {
-                            console.log(`Удален пост. Его автор: ${username}, текст: ${postText.textContent}`);
                             loggedUsernames.push(username);
                         }
                         post.style.display = 'none';
