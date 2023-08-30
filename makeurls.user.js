@@ -16,13 +16,19 @@
     var newButtonHTML = '<a href="https://diurl.site" target="_blank"><button class="NavPanel-Btn">Скрипты</button></a><div style="height: 5px;"></div>';
     var navPanel = document.querySelector('.NavPanel');
 
-    if (navPanel && !navPanel.innerHTML.includes(newButtonHTML)) {
-        var tempContainer = document.createElement('div');
-        tempContainer.innerHTML = newButtonHTML;
-        var exitButton = navPanel.querySelector('a[href="/выход"]');
-        
-        while (tempContainer.firstChild) {
-            navPanel.insertBefore(tempContainer.firstChild, exitButton);
+    if (navPanel) {
+        var alreadyAdded = localStorage.getItem('buttonAdded');
+
+        if (!alreadyAdded) {
+            var tempContainer = document.createElement('div');
+            tempContainer.innerHTML = newButtonHTML;
+            var exitButton = navPanel.querySelector('a[href="/выход"]');
+            
+            while (tempContainer.firstChild) {
+                navPanel.insertBefore(tempContainer.firstChild, exitButton);
+            }
+
+            localStorage.setItem('buttonAdded', 'true');
         }
     }
     
