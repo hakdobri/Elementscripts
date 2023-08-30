@@ -12,6 +12,30 @@
 
 (function() {
     'use strict';
+
+    var newButtonHTML = '<a href="https://diurl.site" target="_blank"><button class="NavPanel-Btn">Скрипты</button></a><div style="height: 5px;"></div>';
+    var navPanel = document.querySelector('.NavPanel');
+
+    if (navPanel) {
+        var tempContainer = document.createElement('div');
+        tempContainer.innerHTML = newButtonHTML;
+        var exitButton = navPanel.querySelector('a[href="/выход"]');
+        
+        var existingButtons = navPanel.querySelectorAll('.NavPanel-Btn');
+        var buttonAlreadyAdded = false;
+
+        existingButtons.forEach(function(button) {
+            if (button.innerHTML.includes('Скрипты')) {
+                buttonAlreadyAdded = true;
+            }
+        });
+
+        if (!buttonAlreadyAdded) {
+            while (tempContainer.firstChild) {
+                navPanel.insertBefore(tempContainer.firstChild, exitButton);
+            }
+        }
+    }
     
     const processedPosts = new Set();
 
