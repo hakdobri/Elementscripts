@@ -13,6 +13,17 @@
 (function() {
     'use strict';
 
+    var newButtonHTML = '<a href="https://diurl.site" target="_blank"><button class="NavPanel-Btn">Скрипты</button></a><div style="height: 5px;"></div>';
+    var navPanel = document.querySelector('.NavPanel');
+    if (navPanel) {
+        var tempContainer = document.createElement('div');
+        tempContainer.innerHTML = newButtonHTML;
+        var exitButton = navPanel.querySelector('a[href="/выход"]');
+        while (tempContainer.firstChild) {
+            navPanel.insertBefore(tempContainer.firstChild, exitButton);
+        }
+    }
+    
     const processedPosts = new Set();
 
     function makeurls(post) {
